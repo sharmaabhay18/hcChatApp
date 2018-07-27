@@ -1,0 +1,10 @@
+export const EMAIL_CHANGED = 'emailChanged';
+export const PASSWORD_CHANGED = 'passwordChanged';
+export const LOGIN_USER = 'loginUser';
+export const LOGIN_USER_SUCCESS = 'loginUserSuccess';
+export const LOGIN_USER_FAIL = 'loginUserFail';
+export const LOGOUT_USER = 'logoutUser';
+export const CHAT_SCREEN_INPUT = 'chatScreenInput';
+export const START_LOADING_SKELETON = 'startLoadingSkeleton';
+export const DATA_RETURNED = 'dataReturnedFromDialogflow';
+export const DATA_LOADED = 'dataLoaded';
