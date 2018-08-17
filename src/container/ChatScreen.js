@@ -28,11 +28,12 @@ renderOutput() {
        <ContentLoaderComponent />
        <ContentLoaderComponent />
        <ContentLoaderComponent />
+       <ContentLoaderComponent />
        </ScrollView>
      );
    } else if (dataLoad) {
    return (
-     <View style={{ alignItems: 'center', marginTop: 5 }}>
+     <View style={{ marginBottom: 120 }}>
      <ComponentList />
      </View>
    );

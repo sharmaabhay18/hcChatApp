@@ -2,8 +2,25 @@ import Dialogflow from 'react-native-dialogflow';
 import { CHAT_SCREEN_INPUT,
          START_LOADING_SKELETON,
          DATA_RETURNED,
-         DATA_LOADED
+         DATA_LOADED,
+         SELECTED_HOTEL_ID,
+         SELECTED_HOTEL_DETAILS,
+         SESSION_LOGOUT
       } from './Var';
+
+export const selectedHotelId = (id) => {
+  return {
+    type: SELECTED_HOTEL_ID,
+    payload: id
+  };
+};
+
+export const selectedHotelDetails = (data) => {
+  return {
+    type: SELECTED_HOTEL_DETAILS,
+    payload: data
+  };
+};
 
 export const chatScreenInput = (text) => {
   return {
@@ -35,5 +52,11 @@ export const startFetchingData = ({ text }) => {
 export const dataLoaded = () => {
   return {
     type: DATA_LOADED
+  };
+};
+
+export const sessionLogout = () => {
+  return {
+    type: SESSION_LOGOUT
   };
 };

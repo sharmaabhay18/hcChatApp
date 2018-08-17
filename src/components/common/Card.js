@@ -22,4 +22,4 @@ containerStyle: {
 }
 };
 
-export  { Card };
+export { Card };

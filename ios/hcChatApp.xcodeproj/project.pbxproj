@@ -66,6 +66,8 @@
 		0A120BE6B52B4FC485908FA5 /* Rubik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D83C59FD2FA349DAA7AD3E00 /* Rubik-Regular.ttf */; };
 		25EF60E95A784FD49ADFF14F /* libRNSVG.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 34F39C7BC6EB4B02BCCEC1C3 /* libRNSVG.a */; };
 		97A0CE2CF740467CABDFC3A3 /* libRNSVG-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 08C00180E54441DAA4AEFCF9 /* libRNSVG-tvOS.a */; };
+		5155FD3668FA40A884EA8026 /* libRNGeocoder.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25003D12ED5E45A399FA993A /* libRNGeocoder.a */; };
+		BA523B9F14ED4850928CD97B /* libRCTMGL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F103A8168D84C7E914194ED /* libRCTMGL.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -405,6 +407,10 @@
 		2966D764C238496CA7989892 /* RNSVG.xcodeproj */ = {isa = PBXFileReference; name = "RNSVG.xcodeproj"; path = "../node_modules/react-native-svg/ios/RNSVG.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
 		34F39C7BC6EB4B02BCCEC1C3 /* libRNSVG.a */ = {isa = PBXFileReference; name = "libRNSVG.a"; path = "libRNSVG.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 		08C00180E54441DAA4AEFCF9 /* libRNSVG-tvOS.a */ = {isa = PBXFileReference; name = "libRNSVG-tvOS.a"; path = "libRNSVG-tvOS.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		3395905D0D8B42C18B966B34 /* RNGeocoder.xcodeproj */ = {isa = PBXFileReference; name = "RNGeocoder.xcodeproj"; path = "../node_modules/react-native-geocoder/ios/RNGeocoder.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		25003D12ED5E45A399FA993A /* libRNGeocoder.a */ = {isa = PBXFileReference; name = "libRNGeocoder.a"; path = "libRNGeocoder.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		F80ED324AA684C7699C564B4 /* RCTMGL.xcodeproj */ = {isa = PBXFileReference; name = "RCTMGL.xcodeproj"; path = "../node_modules/@mapbox/react-native-mapbox-gl/ios/RCTMGL.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		7F103A8168D84C7E914194ED /* libRCTMGL.a */ = {isa = PBXFileReference; name = "libRCTMGL.a"; path = "libRCTMGL.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -438,6 +444,8 @@
 				DE3D2F6B8E054A159733578C /* libBVLinearGradient.a in Frameworks */,
 				D98B1DC79CE94A1B9424A273 /* libRNPhotoView.a in Frameworks */,
 				25EF60E95A784FD49ADFF14F /* libRNSVG.a in Frameworks */,
+				5155FD3668FA40A884EA8026 /* libRNGeocoder.a in Frameworks */,
+				BA523B9F14ED4850928CD97B /* libRCTMGL.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -630,6 +638,8 @@
 				0B85192041A54BED990B4636 /* BVLinearGradient.xcodeproj */,
 				F4C7A4DDBD224849B3C03401 /* RNPhotoView.xcodeproj */,
 				2966D764C238496CA7989892 /* RNSVG.xcodeproj */,
+				3395905D0D8B42C18B966B34 /* RNGeocoder.xcodeproj */,
+				F80ED324AA684C7699C564B4 /* RCTMGL.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -1311,12 +1321,6 @@
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hcChatApp.app/hcChatApp";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1324,6 +1328,8 @@
 					"$(SRCROOT)\..\node_modules\react-native-linear-gradient\BVLinearGradient",
 					"$(SRCROOT)\..\node_modules\react-native-photo-view\ios/**",
 					"$(SRCROOT)\..\node_modules\react-native-svg\ios/**",
+					"$(SRCROOT)\..\node_modules\react-native-geocoder\ios\RNGeocoder",
+					"$(SRCROOT)\..\node_modules\@mapbox\react-native-mapbox-gl\ios\RCTMGL/**",
 				);
 			};
 			name = Debug;
@@ -1344,12 +1350,6 @@
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hcChatApp.app/hcChatApp";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1357,6 +1357,8 @@
 					"$(SRCROOT)\..\node_modules\react-native-linear-gradient\BVLinearGradient",
 					"$(SRCROOT)\..\node_modules\react-native-photo-view\ios/**",
 					"$(SRCROOT)\..\node_modules\react-native-svg\ios/**",
+					"$(SRCROOT)\..\node_modules\react-native-geocoder\ios\RNGeocoder",
+					"$(SRCROOT)\..\node_modules\@mapbox\react-native-mapbox-gl\ios\RCTMGL/**",
 				);
 			};
 			name = Release;
@@ -1382,6 +1384,8 @@
 					"$(SRCROOT)\..\node_modules\react-native-linear-gradient\BVLinearGradient",
 					"$(SRCROOT)\..\node_modules\react-native-photo-view\ios/**",
 					"$(SRCROOT)\..\node_modules\react-native-svg\ios/**",
+					"$(SRCROOT)\..\node_modules\react-native-geocoder\ios\RNGeocoder",
+					"$(SRCROOT)\..\node_modules\@mapbox\react-native-mapbox-gl\ios\RCTMGL/**",
 				);
 			};
 			name = Debug;
@@ -1406,6 +1410,8 @@
 					"$(SRCROOT)\..\node_modules\react-native-linear-gradient\BVLinearGradient",
 					"$(SRCROOT)\..\node_modules\react-native-photo-view\ios/**",
 					"$(SRCROOT)\..\node_modules\react-native-svg\ios/**",
+					"$(SRCROOT)\..\node_modules\react-native-geocoder\ios\RNGeocoder",
+					"$(SRCROOT)\..\node_modules\@mapbox\react-native-mapbox-gl\ios\RCTMGL/**",
 				);
 			};
 			name = Release;
@@ -1435,12 +1441,6 @@
 				TVOS_DEPLOYMENT_TARGET = 9.2;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1448,6 +1448,8 @@
 					"$(SRCROOT)\..\node_modules\react-native-linear-gradient\BVLinearGradient",
 					"$(SRCROOT)\..\node_modules\react-native-photo-view\ios/**",
 					"$(SRCROOT)\..\node_modules\react-native-svg\ios/**",
+					"$(SRCROOT)\..\node_modules\react-native-geocoder\ios\RNGeocoder",
+					"$(SRCROOT)\..\node_modules\@mapbox\react-native-mapbox-gl\ios\RCTMGL/**",
 				);
 			};
 			name = Debug;
@@ -1477,12 +1479,6 @@
 				TVOS_DEPLOYMENT_TARGET = 9.2;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1490,6 +1486,8 @@
 					"$(SRCROOT)\..\node_modules\react-native-linear-gradient\BVLinearGradient",
 					"$(SRCROOT)\..\node_modules\react-native-photo-view\ios/**",
 					"$(SRCROOT)\..\node_modules\react-native-svg\ios/**",
+					"$(SRCROOT)\..\node_modules\react-native-geocoder\ios\RNGeocoder",
+					"$(SRCROOT)\..\node_modules\@mapbox\react-native-mapbox-gl\ios\RCTMGL/**",
 				);
 			};
 			name = Release;
@@ -1518,12 +1516,6 @@
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1531,6 +1523,8 @@
 					"$(SRCROOT)\..\node_modules\react-native-linear-gradient\BVLinearGradient",
 					"$(SRCROOT)\..\node_modules\react-native-photo-view\ios/**",
 					"$(SRCROOT)\..\node_modules\react-native-svg\ios/**",
+					"$(SRCROOT)\..\node_modules\react-native-geocoder\ios\RNGeocoder",
+					"$(SRCROOT)\..\node_modules\@mapbox\react-native-mapbox-gl\ios\RCTMGL/**",
 				);
 			};
 			name = Debug;
@@ -1559,12 +1553,6 @@
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1572,6 +1560,8 @@
 					"$(SRCROOT)\..\node_modules\react-native-linear-gradient\BVLinearGradient",
 					"$(SRCROOT)\..\node_modules\react-native-photo-view\ios/**",
 					"$(SRCROOT)\..\node_modules\react-native-svg\ios/**",
+					"$(SRCROOT)\..\node_modules\react-native-geocoder\ios\RNGeocoder",
+					"$(SRCROOT)\..\node_modules\@mapbox\react-native-mapbox-gl\ios\RCTMGL/**",
 				);
 			};
 			name = Release;

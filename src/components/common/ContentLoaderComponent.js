@@ -10,7 +10,7 @@ const ContentLoaderComponent = () => {
    primaryColor="#f2f2f2"
    secondaryColor="#fff"
    duration={700}
-   height={140}
+   height={120}
    >
        <Rect x="0" y="0" rx="5" ry="5" width="70" height="70" />
        <Rect x="80" y="17" rx="4" ry="4" width="300" height="13" />
@@ -25,10 +25,12 @@ const ContentLoaderComponent = () => {
 
 const style = {
  loaderStyle: {
+  flex: 1, 
   marginTop: 15,
   padding: 10,
   borderWidth: 1,
   borderRadius: 5,
+  borderColor: '#ddd',
   backgroundColor: '#fff'
  }
 };

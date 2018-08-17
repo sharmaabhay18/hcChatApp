@@ -28,7 +28,15 @@ class Login extends Component {
      );
    }
    return (
-     <Button onPress={this.onButtonPress.bind(this)} >
+     <Button
+      onPress={this.onButtonPress.bind(this)}
+      style={{
+       alignSelf: 'center',
+       flex: 1,
+       marginLeft: 10,
+       marginRight: 10
+       }}
+     >
        <Text>Login</Text>
      </Button>
    );
@@ -72,7 +80,7 @@ const style = {
 container: {
   paddingLeft: 10,
   paddingRight: 10,
-  paddingBottom: 20,
+  paddingBottom: 75,
   marginTop: 25
 },
 errorStyle: {

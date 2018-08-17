@@ -12,7 +12,7 @@ class App extends Component {
 
  componentWillMount() {
    Dialogflow.setConfiguration(
-   '', Dialogflow.LANG_ENGLISH
+   '90133fd6ac2a461ea2d9fd3e28351a9a', Dialogflow.LANG_ENGLISH
    );
    this.initializeFirebase();
  }
@@ -20,7 +20,14 @@ class App extends Component {
  initializeFirebase() {
    const firebase = require('firebase');
    // Initialize Firebase
-
+   const config = {
+     apiKey: 'AIzaSyADD4Z51xRzI1nWMC0hfP8W6IUNaCMEhQs',
+     authDomain: 'chatapp-81f14.firebaseapp.com',
+     databaseURL: 'https://chatapp-81f14.firebaseio.com',
+     projectId: 'chatapp-81f14',
+     storageBucket: 'chatapp-81f14.appspot.com',
+     messagingSenderId: '30449396221'
+   };
    firebase.initializeApp(config);
  }
 
@@ -40,8 +47,7 @@ class App extends Component {
 const style = {
   containerMain: {
     flex: 1,
-    justifyContent: 'center',
-    marginBottom: 15
+    justifyContent: 'center'
   }
 };
 
